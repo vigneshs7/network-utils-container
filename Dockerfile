@@ -6,6 +6,7 @@ RUN apt-get update \
                           net-tools \
     && rm -rf /var/lib/apt/lists/*
 
+CMD sleep 50[d]
 COPY Dockerfile /Dockerfile
 LABEL org.label-schema.docker.dockerfile="/Dockerfile" \
       org.label-schema.vcs-type="Git" \
